@@ -25,7 +25,7 @@ export default function MyChart() {
 	const option = {
 		// 차트 상단 제목
 		title: {
-			text: 'Router 비용 비교',
+			text: 'Quality vs Cost',
 			left: 'center',
 		},
 		animation: true,
