@@ -12,3 +12,4 @@ export const lineData = [
 // [0.990, 816.587], // closeset gpt-4.1
 // [2.091, 830.429], // closeset gpt-5-chat
 // [0.741, 810.650], // closeset gpt-4o
+// [5.223, 837.741], // highest

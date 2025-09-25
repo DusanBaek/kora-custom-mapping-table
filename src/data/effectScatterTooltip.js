@@ -20,9 +20,7 @@ export default function effectScatterTooltip(params) {
 		</div>
 
 		<div style="margin-bottom: 12px;">
-			<div style="font-weight: bold; margin-bottom: 8px; color: #495057;">Quality & Cost</div>
-			<p>Cost: ${params.data.value[0]}</p>
-			<p>Quailty: ${params.data.value[1]}</p>
+			<p>Quailty: ${params.data.value[1]}, Cost: ${params.data.value[0]}</p>
 		</div>
 	</div>
 	`;
