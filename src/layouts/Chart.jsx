@@ -36,6 +36,7 @@ export default function MyChart() {
 			backgroundColor: 'rgba(255, 255, 255, 0.95)',
 			borderColor: '#ccc',
 			borderWidth: 1,
+			confine: true,   // 화면 밖으로 안 나가게 강제로 차트 영역 안에 고정
 			textStyle: {
 				fontSize: 12,
 				fontWeight: 'bold',
@@ -71,6 +72,16 @@ export default function MyChart() {
 			},
 		},
 		series: [
+			// 일반 포인트
+			{
+				type: 'scatter',
+				data: scatterData,
+				itemStyle: {
+					opacity: 0.7,
+					color: 'lightgrey',
+				},
+				z: 1
+			},
 			// 크게 효과 주고 싶은 포인트 지점
 			{
 				type: 'effectScatter',
@@ -90,6 +101,14 @@ export default function MyChart() {
 					scale: 1.5,
 				},
 				data: effectScatterData,
+				label: {
+					show: true,
+					position: 'top',  // 또는 'right', 'inside' 등
+					formatter: function (params) {
+						return params.name;  // 또는 params.value 등
+					}
+				},
+				z: 2
 			},
 			// 라인 그리고 싶은 포인트 들
 			{
@@ -102,15 +121,7 @@ export default function MyChart() {
 					type: 'dashed',
 				},
 				symbol: 'none',
-			},
-			// 일반 포인트
-			{
-				type: 'scatter',
-				data: scatterData,
-				itemStyle: {
-					opacity: 0.7,
-					color: 'lightgrey',
-				},
+				z: 3
 			},
 		],
 	};
