@@ -1,12 +1,33 @@
-# React + Vite
+# 프로젝트 이름
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KORA COST
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 설치 방법
 
-## Expanding the ESLint configuration
+1. **GitHub에서 프로젝트 클론**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/grace-ori/kora_cost.git
+cd kora_cost
+
+
+2. 의존성 설치
+yarn install
+
+3. 개발 서버 실행
+yarn dev
+
+## 빌드
+1. 배포용 빌드 파일 생성
+npm run build
+
+2. 빌드 결과 확인(인터넷 환경이 아닌 경우에도 실행 가능)
+cd dist
+yarn dev
+
+
+
+
+```
