@@ -38,6 +38,19 @@ cd dist
 yarn dev
 ```
 
-```
+## 차트 데이터 수정
 
-```
+1. 데이터 수정 폴더 위치
+   src/data
+
+2. 강조하고 싶은 포인트 지점
+   effectScatterData.js
+
+3. 강조 포인트에 툴팁 데이터
+   effectScatterTooltip.js
+
+4. 라인으로 연결하고 싶은 포인트 지점
+   lineData.js
+
+5. 일반 포인트 데이터
+   scatterData.js
